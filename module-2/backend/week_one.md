@@ -52,7 +52,7 @@ HTTP stands for Hyper Text Transfer Protocol.
 
 14. What are the two ways to interpolate Ruby in an ERB view template? What's the difference between these two ways?
 One way is to inject ruby in the ERB file within <%= %>
-The second way is to call a method created in the models section.
+The second way is to call a method created in the models section by <% %>
 The second way is prefered as we want to keep single responsibilty and ERB's main focus is to display info.
 
 15. What's an ORM?
