@@ -2,7 +2,7 @@
 
 Fork this respository. Answer the questions to the best of your ability. Try to answer them with limited amount of external research. These questions cover the majority of what we've learned this week (which is a TON - YOU are a web developer!!!). 
 
-Note: When you're done, submit a PR. 
+Note: When you're done, submit a PR.
 
 1. At a high level, what is ActiveRecord? What does it do/allow you to do?
   ActiveRecord is a library, the model in the MVC structure, which is resposible for representing business data and logic. It provides an ORM framework that is wrapped around a relational database. It allows us to wrap our data in Ruby objects so that we can manipulate them. 
@@ -41,6 +41,7 @@ end
 
 Now how would you find the owner of the team with an id of 4?
 
+<<<<<<< HEAD
 ```ruby
   team4 = Team.find(4)
   team4.owner
@@ -60,6 +61,12 @@ Schema - is the blueprint of what our tables look like.
 9. Describe the relationship between a foreign key on one table and a primary key on another table.
 The foreign key on table 1 is associated with table 2, table 1 has a primary key that belongs to itself. While table 2's primary key not only belongs to itself but it also used to establish the link to table1.
 10. What are the parts of an HTTP response?
+=======
+5. In a database that's holding students and teachers, what will be the relationship between students and teachers? Draw the schema diagram.
+6. Define foreign key, primary key, and schema.
+7. Describe the relationship between a foreign key on one table and a primary key on another table.
+8. What are the parts of an HTTP response?
+>>>>>>> 2d8a0f2577ed0f68069232bdd1090307b7dcd8d8
 
 11. Describe some techniques to make our Sinatra code more DRY. Give an example of when you would use these techniques.
 ????
@@ -74,6 +81,7 @@ The foreign key on table 1 is associated with table 2, table 1 has a primary key
   Exists? - It returns a boolean value of wether your record exists or not.
 
 2. Name your three favorite ActiveRecord rake tasks and describe what they do.
+<<<<<<< HEAD
 rake db:migrate:reset - This runes drop, create and migrate, therfore dropping your database, creating it and migrating the migrations.
 rake db:test:prepare - This setups your test environment.
 rake db:seed - This seeds your database.
@@ -102,3 +110,12 @@ When attributes are created or become byproducts of joining two tables together.
 15. What types of output do we want to test when we test our controllers?
 16. What could you see in your code that would make you think you might want to create a partial?
 17. Why might you use a helper method?
+=======
+3. What two columns does `t.timestamps null: false` create in our database?
+4. In a database that's holding schools and teachers, what will be the relationship between schools and teachers?
+5. In the same database, what will you need to do to create this relationship (draw a schema diagram)?
+6. Give an example of when you might want to store information besides ids on a join table.
+7. Describe and diagram the relationship between patients and doctors.
+8. Describe and diagram the relationship between museums and original_paintings.
+9. What could you see in your code that would make you think you might want to create a partial?
+>>>>>>> 2d8a0f2577ed0f68069232bdd1090307b7dcd8d8
